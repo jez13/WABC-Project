@@ -7,10 +7,39 @@
 </head>
 <body>
     <div align="center">
-        <img align="center" src="https://jez13.github.io/WABC-Project/WABC.png" height="75">
+        <img align="center" src="https://jez13.github.io/WABC-Project/WABC.png" height="125">
         <h1>The WABC Project</h1>
-        <img src="https://img.shields.io/badge/License-AGPL--3.0-blue" alt="Foo - Bar">
+        <img src="https://img.shields.io/badge/License-GPL--3.0-blue" alt="License - GPL-3.0">
+        <img src="https://img.shields.io/badge/Python-3.11-green?logo=python&logoColor=f5f5f5" alt="Python - 3.11">
+        <img src="https://img.shields.io/badge/Windows-8+-green?logo=windows" alt="Windows - 8+">
     </div>
+    <h3>What is WABC?</h3>
+    WABC (Windows Application Builder Collection) is a program used to easily build programming applications.
+    <h3>What programming languages does WABC support?</h3>
+    Currently, WABC is in Pre-Alpha, so there aren't much programming languages.
+    </br>WABC Supports:
+    <ul>
+        <li>Java</li>
+        <li>C (Work in progress)</li>
+        <li>C++ (Work in progress)</li>
+    </ul>
+    <h3>How do i use WABC?</h3>
+    For WABC to work, you need a <code>build.cfg</code> file.
+    </br><code>build.cfg</code> uses the TOML programming language to set the settings for WABC.
+    </br>Example <code>build.cfg</code> for java:
+    <pre> 
+ [Project]
+     Name = "HelloWorld"
+     Compiler = "C:\\Program Files\\Java\\jdk-22\\bin\\javac.exe"
+ [Manifest]
+     File = "manifest.txt"
+ [DirectoryTree]
+     Source = "src"
+     Build = "build"
+     Distribution = "dist"
+    </pre>
+    <h3>Downloads</h3>
+
     <style>
         body {
             color: black;
@@ -18,6 +47,12 @@
         }
         h1, h2, h3, h4, h5, h6 {
             text-align: center;
+        }
+        pre {
+            background-color: black;
+            color: lightgray;
+            font-family: Fira Code;
+            border-radius: 10px;
         }
     </style>
 </body>
